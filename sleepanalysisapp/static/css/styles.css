@@ -1,0 +1,78 @@
+/* styles.css */
+
+body {
+    background-color: #1a1a1a; /* Dark background */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc; /* Light text color */
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #fff; /* White heading color */
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    color: #fff; /* White label color */
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #666; /* Dark border color */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #333; /* Dark input background */
+    color: #ccc; /* Light text color for input */
+}
+
+button {
+    background-color: #2d1440; /* Purple button background color */
+    color: #fff; /* White button text color */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a2d7f; /* Darker purple on hover */
+}
+
+.formfield {
+    border: 1px solid #666; /* Dark border color */
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #333; /* Dark background for form */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #2d1440; /* Purple border for result */
+    border-radius: 5px;
+    background-color: #333; /* Dark background for result */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.result h2 {
+    color: #fff; /* White heading color */
+    font-size: 24px;
+    text-align: center;
+}
