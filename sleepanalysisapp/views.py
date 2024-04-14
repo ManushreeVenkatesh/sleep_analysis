@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 import joblib
-import requests
 
-clf = joblib.load('sleepanalysisapp/templates/sleepanalysisapp/sleep_disorder_prediction_model.pkl')
+
+clf = joblib.load('sleepanalysisapp/templates/sleepanalysisapp/SleepDT.pkl')
 
 # OCCUPATION_MAPPING = {
 #     'Nurse': 5,
