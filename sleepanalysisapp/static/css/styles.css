@@ -1,67 +1,85 @@
-/* styles.css */
-
 body {
-    background-color: #15193b; /* Dark blue background */
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #f0f0f0; /* Light text color */
+    background-color: #f7f7f7; /* Light gray background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 h1 {
-    font-size: 2.8em;
-    margin-bottom: 1em;
     text-align: center;
-    color: #f0f0f0; /* White heading color */
+    color: #555; /* Dark gray heading color */
 }
 
-label {
-    color: #f0f0f0; /* White label color */
-}
-
-input, select {
-    width: calc(100% - 24px);
-    padding: 10px;
+.row {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
-    border: 1px solid #374785; /* Dark blue border color */
-    border-radius: 5px;
-    box-sizing: border-box;
-    background-color: #1e2857; /* Dark blue input background */
-    color: #f0f0f0; /* Light text color for input */
 }
 
-button {
-    background-color: #374785; /* Darker blue button background color */
-    color: #f0f0f0; /* White button text color */
-    padding: 12px 24px;
-    border: none;
+.reference-section {
+    flex: 1;
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
     border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.reference-section h2 {
+    margin-top: 0;
+    color: #555; /* Dark gray heading color */
+}
+
+.formfield {
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formfield label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555; /* Dark gray label color */
+}
+
+.formfield input {
+    width: calc(50% - 5px);
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f3f3f3; /* Light gray input background */
+    color: #333; /* Dark text color */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+.formfield input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #99ccff; /* Light blue button background */
+    color: #fff; /* White button text color */
+    border: none;
     cursor: pointer;
-    text-align: center;
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #4e5b96; /* Slightly lighter blue on hover */
-}
-
-.formfield {
-    border: 1px solid #374785; /* Dark blue border color */
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 30px;
-    background-color: #1e2857; /* Dark blue background for form */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
+.formfield input[type="submit"]:hover {
+    background-color: #66a3ff; /* Slightly darker blue on hover */
 }
 
 .result {
-    margin-top: 30px;
-    padding: 20px;
     text-align: center;
+    margin-top: 20px;
+    color: #555; /* Dark gray result text color */
 }
